@@ -5,7 +5,7 @@ class Figmagen < Formula
   homepage 'https://github.com/hhru/FigmaGen'
   head 'https://github.com/hhru/FigmaGen.git'
   url "https://github.com/hhru/FigmaGen/archive/#{version}.tar.gz"
-  sha256 'd907c7f0d194b08c0a18ed2f8b63fc57e447145e6000eb24c997fc1c4ff4dd2b'
+  sha256 'f8221c95412b42da1c062bba9dcaacfff5b5ed121880e4f49015bfcbd9770996'
 
   depends_on :xcode => ['10.2', :build]
 
