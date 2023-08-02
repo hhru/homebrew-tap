@@ -4,12 +4,10 @@ class Figmagen < Formula
   desc 'A Swift command line tool to generate code for the Figma component library'
   homepage 'https://github.com/hhru/FigmaGen'
   head 'https://github.com/hhru/FigmaGen.git'
-  url "https://github.com/hhru/FigmaGen/archive/#{version}.tar.gz"
-  sha256 'f8221c95412b42da1c062bba9dcaacfff5b5ed121880e4f49015bfcbd9770996'
-
-  depends_on :xcode => ['10.2', :build]
+  url "https://github.com/hhru/FigmaGen/releases/download/#{version}/figmagen-#{version}.zip"
+  sha256 'd7c37dd0b4370e7ac87cd380e958d9bc1b0915e4840452f2a64abbd2d1e0f246'
 
   def install
-    system 'make', 'install', "PREFIX=#{prefix}"
+    system 'make', 'install_release', "PREFIX=#{prefix}"
   end
 end
